@@ -1,0 +1,102 @@
+body {
+    margin: 1rem;
+    background: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background: white;
+
+    margin: auto;
+    padding: 1.15rem;
+    width: min(1113px, 80vw);  /* 1113px: Largura original da imagem. */
+}
+
+
+
+.header img {
+    width: 100%;
+}
+
+
+
+/* Estilização do container do conteúdo principal */
+.main .topico {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-image: url(./assets/fundo-f1.jpg);
+    background-repeat: no-repeat; 
+    background-position: center calc(50% + 2.5rem);
+}
+
+.main .topico p {
+    text-indent: 10%;
+    line-height: 1.5;
+}
+
+.main .topico .titulo {
+    border-left: .7rem solid gray;
+    border-bottom: 1px solid gray;
+
+    background-image: url(./assets/bandeira1.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.main .topico .titulo {
+    font-weight: bold;
+    color: #111111;
+    font-size: 1.15rem;
+    padding: .3rem;
+    margin: 0;
+}
+
+
+
+/* Estilização da lista de links */
+.links a {
+    color: black;
+    text-decoration: none;
+}
+
+.links li {
+    padding: .25rem;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: rgb(145, 138, 52);
+}
+
+#sumario .links {
+    list-style: none;
+}
+
+
+
+/* Estilização do article equipes */
+#equipes table {
+    margin-top: .5rem;
+}
+
+#equipes table td {
+    border-bottom: 1px gray dotted;
+}
+
+
+
+/* Estilização do article pilotos */
+#pilotos table th {
+    text-align: left;
+}
+
+#pilotos table td, table th {
+    padding: .25rem .75rem;
+    border-bottom: 2px dotted gray;
+}
+
+@media (max-width: 1000px) {
+    :root {
+        font-size: 14px;
+    }
+}
